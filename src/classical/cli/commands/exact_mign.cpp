@@ -30,7 +30,7 @@
 
 #include <core/utils/program_options.hpp>
 
-#include <classical/cli/stores_experimental.hpp>
+#include <classical/cli/stores_mign.hpp>
 #include <classical/mign/mign.hpp>
 #include <classical/mig_sat/mig_sat_cegar.hpp>
 #include <classical/cli/stores.hpp>
