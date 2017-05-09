@@ -34,6 +34,7 @@
 
 #include <core/utils/range_utils.hpp>
 #include <core/utils/timer.hpp>
+#include <core/utils/timeout.hpp>
 #include <classical/mig_sat/spec_representation_mign.hpp>
 
 #include <classical/mign/mign.hpp>
@@ -1541,8 +1542,7 @@ std::vector<mign_graph> exact_mig_abc (std::vector<bool> normal_MO, unsigned opt
   std::vector<mign_graph> mign; 
    
   while ( true )
-  {
-	  
+  {  
      if ( verbose )
      {
 		 std::cout << boost::format( "[i] check for realization with %d gates" ) % k << std::endl;
@@ -1587,6 +1587,7 @@ std::vector<mign_graph> exact_mig_abc (std::vector<bool> normal_MO, unsigned opt
 		 
 	     if ( result == 1)
 	       {
+		   std::cout << " SAT" << std::endl; 
 	       mign = inst->extract_mig_MO( model_name, normal_MO, verbose );
 		   if (option == 0)
 		   {
@@ -1640,6 +1641,7 @@ std::vector<mign_graph> exact_mig_abc (std::vector<bool> normal_MO, unsigned opt
 	   }	   
 	   else if ( result == 2 )
 	      {
+		  std::cout << " UNSAT" << std::endl; 
 	      return std::vector<mign_graph>();
 	      }
 	   else

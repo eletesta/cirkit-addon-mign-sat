@@ -64,7 +64,7 @@ bool exact_mign_command::execute()
 		
 		auto mign = migns.current(); 
 	
-		if (boost::optional<mign_graph> mign = exact_mig_with_sat_cegar( migns.current(), option, depth, fanout,settings, statistics))
+		if (boost::optional<mign_graph> mign = exact_mig_with_sat_cegar( migns.current(), option, depth, fanout, settings, statistics))
 		{
 	    	  migns.extend();
 	    	  migns.current() = *mign; 
