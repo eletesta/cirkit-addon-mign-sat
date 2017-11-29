@@ -36,7 +36,7 @@
 #ifndef CLI_EXACT_MIGN_COMMAND_HPP
 #define CLI_EXACT_MIGN_COMMAND_HPP
 
-#include <core/cli/cirkit_command.hpp>
+#include <cli/cirkit_command.hpp>
 
 namespace cirkit
 {

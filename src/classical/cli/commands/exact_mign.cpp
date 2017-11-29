@@ -33,7 +33,7 @@
 #include <classical/cli/stores_mign.hpp>
 #include <classical/mign/mign.hpp>
 #include <classical/mig_sat/mig_sat_cegar.hpp>
-#include <classical/cli/stores.hpp>
+#include <cli/stores.hpp>
 
 namespace cirkit
 {

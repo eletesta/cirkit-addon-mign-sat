@@ -1119,7 +1119,7 @@ int create_clauses(unsigned option)
 		         q = pa.second; 
 		
 	             if ( eVerbose )
-	             printf( "variables %d and %d are symmetric\n", p, q );
+	             //printf( "variables %d and %d are symmetric\n", p, q );
 	             for ( i = 0; i < nGates; ++i )
 					 for ( k = 1; k < q; ++k)
 	                     for ( j = 0; j < k; ++j )
@@ -1587,7 +1587,7 @@ std::vector<mign_graph> exact_mig_abc (std::vector<bool> normal_MO, unsigned opt
 		 
 	     if ( result == 1)
 	       {
-		   std::cout << " SAT" << std::endl; 
+		   std::cout << " SAT! " << std::endl; 
 	       mign = inst->extract_mig_MO( model_name, normal_MO, verbose );
 		   if (option == 0)
 		   {
@@ -1641,7 +1641,7 @@ std::vector<mign_graph> exact_mig_abc (std::vector<bool> normal_MO, unsigned opt
 	   }	   
 	   else if ( result == 2 )
 	      {
-		  std::cout << " UNSAT" << std::endl; 
+		  std::cout << " UNSAT! " << std::endl; 
 	      return std::vector<mign_graph>();
 	      }
 	   else
