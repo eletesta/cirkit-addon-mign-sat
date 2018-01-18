@@ -55,6 +55,7 @@ private:
 	unsigned option = 0; 
 };
 
+
 }
 
 #endif

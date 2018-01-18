@@ -25,6 +25,7 @@
 
 #include <boost/dynamic_bitset.hpp>
 #include <boost/format.hpp>
+#include <boost/assign.hpp>
 #include <boost/optional.hpp>
 
 #include <classical/abc/abc_api.hpp>
